@@ -1,0 +1,315 @@
+/*common css*/
+*{
+	margin: 10px ;
+	padding: 3px;
+	font-family: sans-serif;
+}
+
+/*element css*/
+h1{
+	color: Blue;
+}
+
+/*element,element css*/
+h1,h2{
+text-align: center;
+}
+
+/*element element css*/
+div p{
+	border: 1px solid black;
+}
+
+/*element>element css,div>p style every <p> element where the parent is a <div> element*/
+div>p{
+	border: 3px solid black;
+}
+
+/*element+element css, styles the immediate element agter the fist element */
+div+a{
+	font-size: 20px;
+	font-weight: 600;
+	color: blue;
+	display: block;
+	text-decoration: none;
+
+}
+
+/*hover css*/
+a:hover{
+	background-color: #ddd;
+}
+
+/*element ~ element css*/
+h4 ~ ul {
+  background: red;
+}
+ 
+/*first-child, last child, nth child*/
+.list ul li:first-child{
+	color: green;
+} 
+.list ul li:last-child{
+	color: red;
+} 
+.list ul li:nth-child(3){
+	color: blue;
+} 
+
+/*class css*/
+.intro{
+	font-size: 25px;
+}
+
+/*class1,class2 css*/
+.intro, .info{
+font-weight: 600;
+}
+
+/*class element css*/
+.info p{
+	font-size: 16px;
+	color: red;
+}
+
+/*element.class css*/
+p.info{
+	font-size: 16px;
+	background-color: yellow;
+	text-align: center;
+}
+
+/*id css*/
+#next{
+	color: brown;
+}
+
+
+/*[attribute] css*/
+a[target]{
+	background-color: yellow;
+}
+
+/*[attribute]=value css*/
+
+a[target="global"]{
+	background-color: skyblue;
+	display: block;
+}
+
+/*[attribute]~=value css*/
+img[alt~="light"]{
+	border: 3px solid yellow;
+}
+
+/*[attribute]|=value css*/
+[lang|="en"]{
+	background-color: yellow;
+}
+
+/*[attribute^=value] css*/
+div[class^="test"]{
+	background-color: skyblue;
+}
+
+/*[attribute$=value] css*/
+div[class$="test"]{
+	background-color: #ddd;
+}
+
+/*[attribute*=value] css*/
+p[class*="test"]{
+	border: 1px solid black;
+}
+
+/*active css */
+a:active{
+	background-color: green;
+}
+
+/*::after css */
+.info p::after{
+	content: "-Remeber this";
+}
+
+/*::before css */
+#next::before{
+	content: "-Let's get into the depth--";
+}
+
+/*:checked css */
+input:checked {
+  height: 20px;
+  width: 20px;
+}
+
+/*:default css */
+.int input:default{
+	 box-shadow: 0 0 1px 1px red;
+}
+
+/*:disabled, .enabled css */
+.form input:enabled{
+	background-color: yellow;
+}
+.form input:disabled{
+	background-color: #dddd;
+}
+
+/*:empty*/
+label:empty{
+	width: 200px;
+	height: 20px;
+	background-color: red;
+	display: block;
+}
+
+/*::first-letter, ::first-line*/
+.info p::first-letter{
+	font-size: 30px;
+	color: #8A2BE2;
+}
+
+.info p::first-line{
+	background-color: pink ;
+}
+
+/*:first-of-type, last-of-type, nth-of-type */
+.type p:first-of-type{
+	background-color: red;
+}
+.type p:last-of-type{
+	background-color: blue;
+}
+.type p:nth-last-of-type(2){
+	background-color: yellow;
+}
+
+/*:focus*/
+.form input:focus {
+  background-color: red;
+}
+
+/*:in-range, out-of-ranfe*/
+input:in-range{
+	border: 3px solid green;
+}
+input:out-of-range{
+	border: 3px solid orange;
+}
+
+/*:invalid,valid*/
+.valid input:invalid{
+	border: 2px solid red;
+}
+.valid input:valid{
+	border: 2px solid black;
+}
+
+
+
+/* :lang */
+p:lang(it){
+	background-color: yellow;
+}
+
+/* :link*/
+.links a:link {
+  background-color: #ddd;
+}
+
+/* :visited*/
+.links a:visited {
+  color: green;
+}
+
+/*placeholder*/
+::placeholder{
+	color: red;
+}
+
+/*readonly, read-write*/
+.read input:read-only {
+  background-color: lightpink;
+  display: block;
+}
+.read input:read-write{
+	background-color: lightcyan;
+  display: block;
+}
+
+/*root*/
+:root{
+	background-color:floralwhite;
+}
+
+/*::selection*/
+::selection {
+  color: red;
+  background: yellow;
+}
+
+/*:target*/
+:target{
+	 border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
+}
+
+/* ::marker*/
+::marker{
+	color: green;
+	font-size: 30px;
+}
+
+/*:not(selector)*/
+.select :not(p){
+	background-color: skyblue;
+}
+
+/*only-of-type*/
+h5:only-of-type {
+  background: red;
+}
+
+/*only-child*/
+	a:only-child{
+		background: lightpink;
+	}
+
+/*optional, required*/
+input:optional {
+  background-color: yellow;
+}
+
+input:required {
+  background-color: skyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
